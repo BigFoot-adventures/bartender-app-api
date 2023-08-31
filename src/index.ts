@@ -66,7 +66,7 @@ let orders: Cocktail[] = [
             "1 oz Triple sec",
             "Salt"
         ],
-        "instructions": "Shake all ingredients with ice and strain into a cocktail glass."
+        "instructions": "Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass."
     }
 ];
 
@@ -91,7 +91,7 @@ app.get("/orders", (req, res) => {
 app.post("/orders", (req, res) => {
     let order = req.body;
     orders.push(order);
-    res.send("Order received");
+    res.send({message: "Order received"});
 });
 
 // remove completed order
