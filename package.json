@@ -4,7 +4,9 @@
   "description": "A small api to support an assignment for a bartender application",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "author": "Brendon Jensen",
   "license": "ISC",
